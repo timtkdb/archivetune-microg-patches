@@ -11,6 +11,8 @@ sign-in through [microG](https://github.com/ReVanced/GmsCore) and make brand acc
 This project is completly made by Ai which inclues everythign aside from some template files. If you dont agree with this then dont use these patches.
 I am not responsible if these patches break the app. With the limited testing I have done they seem fine.
 
+This is also my first time using GitHub so i have no idea what im doing.
+
 ## ❓ About
 
 ArchiveTune signs in with a copied web cookie, which expires and offers no obvious way to use a brand account.
