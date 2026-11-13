@@ -53,53 +53,25 @@ Click the button below, or manually add this repo url to Morphe Manager: https:/
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
+> **[v1.0.0](https://github.com/timtkdb/archivetune-microg-patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+<details open>
+<summary>📦 ArchiveTune&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
 
-<!-- Do not modify this section by hand. The patch list is generated when release.yml creates a new release.
+**Package name:** `moe.rukamori.archivetune`
 
-     If you wish for the patches list to be collapsed, then remove the word 'EXPANDED' from the comment tag above.
+**🎯 Supported versions:**
 
-     If you wish to manually keep this list updated then remove the PATCHES_START and PATCHES_END
-     comment blocks entirely. -->
+| 15.1.0 |
+| :---: |
 
-#### A list of the patches will automatically be shown here after the first release is created.
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Show all brand accounts](#show-all-brand-accounts) | ArchiveTune's account switcher hides every account that YouTube reports as having no YouTube channel. Music-only brand accounts usually have none, so they never show up under "YouTube channels" in the account menu. This makes them show up. |  |
+| [Sign in with microG](#sign-in-with-microg) | Sign in with an account from microG (GmsCore) instead of typing a Google password. microG signs the login page in as the chosen account, then ArchiveTune's normal login flow runs, including YouTube Music's own main/brand account switcher. |  |
 
-&nbsp;
+</details>
 
-## 🚀 First-time setup (removed automatically by the first release)
-
-1. [Set up](https://github.com/MorpheApp/morphe-documentation/blob/main/docs/morphe-development/README.md) a development environment, including a GitHub PAT as described
-   [here](https://github.com/MorpheApp/morphe-patcher/blob/main/docs/2_1_setup.md#-prepare-the-environment)
-   (`gpr.user` and `gpr.key` in `~/.gradle/gradle.properties`).
-2. Create the GitHub repository `timtkdb/archivetune-microg-patches`, then push **both** a `main` and a `dev` branch
-   (`.releaserc` releases from `main` and pre-releases from `dev`):
-   ```
-   git init -b main
-   git add . && git commit -m "chore: initial commit"
-   git remote add origin git@github.com:timtkdb/archivetune-microg-patches.git
-   git push -u origin main
-   git checkout -b dev && git push -u origin dev
-   ```
-3. Enable "Allow GitHub Actions to create and approve pull requests" in the repo Settings > Actions > General >
-   Workflow permissions.
-4. (Optional) Sign releases so Morphe Manager refuses a swapped release: run `./gradlew generateSigningKey`,
-   commit `morphe-signing.pub`, never commit `morphe-signing.key` (already git-ignored), and add its content as the
-   `MORPHE_SIGNING_KEY` Actions secret. Keep a backup of the key somewhere safe.
-5. (Optional) Add `patches-bundle.png` for a custom icon in Morphe Manager instead of your GitHub avatar.
-
-## 🧑‍💻 Dev usage
-
-- **Make all changes on the `dev` branch.**
-- Local build: `./gradlew buildAndroid`, the `.mpp` is written to `patches/build/libs/patches-*.mpp`.
-- Use [semantic commit](https://kapeli.com/cheat_sheets/Semantic_Commits.docset/Contents/Resources/Documents/index)
-  messages: `feat:` (new feature), `fix:` (bug fix), `bump:` (support for a new app version),
-  `chore:` (no release). `feat:`/`fix:`/`bump:` on `dev` create a pre-release; merge `dev` into `main`
-  (merge commit, no squash) for a stable release.
-- **Always release through `release.yml`.** Do not create releases by hand and do not edit or commit
-  `patches-list.json`, `patches-bundle.json` or `CHANGELOG.md`; the workflow generates them.
-- Do not force-push semantic release commits.
-
-<!-- The patches end tag is intentionally placed here so the first release will clean up
-     this readme of all developer instructions above. -->
 <!-- PATCHES_END -->
 
 ### 🔧 How it works
