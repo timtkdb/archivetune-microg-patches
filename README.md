@@ -9,7 +9,7 @@ sign-in through [microG](https://github.com/ReVanced/GmsCore) and make brand acc
 
 #Warning:
 This project is completly made by Ai which inclues everythign aside from some template files. If you dont agree with this then dont use these patches.
-I am not responsible if these patches break the app. With the limited testing I have done they seem fine.
+I am not responsible if these patches break the app. With the limited testing I have done they seem fine. Im alos lazy plus i use the free plan for claude so maintenance if at all will be blotchy
 
 This is also my first time using GitHub so i have no idea what im doing.
 
@@ -40,7 +40,7 @@ Settings > Account > the dropdown arrow next to the Account button > "YouTube ch
 - The session is still a web cookie, so it can expire. Re-login is one tap in microG instead of a password.
 - Tested on the FOSS universal APK. The GMS flavor was checked by inspecting its code but not run.
 - Newer ArchiveTune versions are not listed as compatible yet. If a patch fails with
-  "Failed to match the fingerprint", the app changed that code; please open an issue with the error.
+  "Failed to match the fingerprint", the app changed that code.
 
 ### How to use these patches
 
