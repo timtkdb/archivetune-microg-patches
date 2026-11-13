@@ -7,6 +7,10 @@ sign-in through [microG](https://github.com/ReVanced/GmsCore) and make brand acc
 > These patches do not bypass authentication: you still sign in to your own Google account, only the
 > way you do it changes.
 
+#Warning:
+This project is completly made by Ai which inclues everythign aside from some template files. If you dont agree with this then dont use these patches.
+I am not responsible if these patches break the app. With the limited testing I have done they seem fine.
+
 ## ❓ About
 
 ArchiveTune signs in with a copied web cookie, which expires and offers no obvious way to use a brand account.
